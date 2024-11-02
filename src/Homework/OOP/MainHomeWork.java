@@ -5,6 +5,8 @@ import java.io.IOException;
 
 public class MainHomeWork {
     public static void main(String[] args) throws IOException {
+
+        /* Создаем отдельных персон */
         Person vadim = new Person("Вадим","мужской", 32);
         Person oleg = new Person("Олег", "мужской", 25);
         Person anna = new Person("Анна","женский", 29);
@@ -16,6 +18,7 @@ public class MainHomeWork {
         Person pavel = new Person("Павел","мужской", 57);
         Person maria = new Person("Мария","женский", 54);
 
+        //Создаем семейные связи между людьми
         vadim.setFather(pavel); //записал в отцы
         vadim.setMother(maria); //записал в мать
         vadim.addChild(sergey); //добавил ребенка
@@ -33,7 +36,6 @@ public class MainHomeWork {
         familyTree.addPerson(larisa);
         familyTree.addPerson(anna);
 
-        System.out.println(familyTree.getPeople());
 
         // Создаем объект для работы с файлами
         FileOperationsImpl fileOperations = new FileOperationsImpl();
@@ -59,5 +61,11 @@ public class MainHomeWork {
         if (loadedFamilyTree != null){
             System.out.println("Загруженное из файла: "+loadedFamilyTree.getPeople());
         }
+
+        loadedFamilyTree.sortByName();
+        System.out.println(loadedFamilyTree);
+
+        loadedFamilyTree.sortByAge();
+        System.out.println(loadedFamilyTree);
     }
 }
