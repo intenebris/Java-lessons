@@ -1,12 +1,13 @@
 package Homework.OOP.service;
 
 import Homework.OOP.model.FamilyTree;
+import Homework.OOP.model.Person;
 
 import java.io.IOException;
 
-public interface FileOperations {
+public interface FileOperations<T extends Person> {
 
-    void saveToFile(FamilyTree familyTree, String fileName) throws IOException;
+    void saveToFile(FamilyTree<T> familyTree, String fileName) throws IOException;
 
-    FamilyTree loadFromFile(String fileName) throws IOException, ClassNotFoundException;
+    FamilyTree<T> loadFromFile(String fileName) throws IOException, ClassNotFoundException;
 }
