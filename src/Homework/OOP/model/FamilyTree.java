@@ -1,4 +1,4 @@
-package Homework.OOP;
+package Homework.OOP.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

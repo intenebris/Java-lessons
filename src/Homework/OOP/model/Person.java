@@ -1,9 +1,8 @@
-package Homework.OOP;
+package Homework.OOP.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 //Класс, представляющий человека.
 public class Person implements Serializable {

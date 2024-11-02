@@ -1,4 +1,6 @@
-package Homework.OOP;
+package Homework.OOP.service;
+
+import Homework.OOP.model.FamilyTree;
 
 import java.io.IOException;
 
