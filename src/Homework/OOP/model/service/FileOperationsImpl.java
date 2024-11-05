@@ -1,4 +1,4 @@
-package Homework.OOP.service;
+package Homework.OOP.model.service;
 
 import Homework.OOP.model.FamilyTree;
 import Homework.OOP.model.Person;
